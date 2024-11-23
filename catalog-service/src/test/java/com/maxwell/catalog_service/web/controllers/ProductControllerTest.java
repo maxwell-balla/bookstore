@@ -8,7 +8,7 @@ import org.springframework.test.context.jdbc.Sql;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-@Sql("/test-data.sql")
+@Sql(scripts = "/test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 class ProductControllerTest extends AbstractIT {
 
     @Test
