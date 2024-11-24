@@ -1,5 +1,4 @@
 truncate table products;
-ALTER TABLE products ADD COLUMN id UUID DEFAULT gen_random_uuid();
 
 INSERT INTO products(id, code, name, description, image_url, price) VALUES
                                                                         ('f1e96c68-1e11-4c4c-b2d7-7c65f3d1d001', 'P100', 'The Hunger Games', 'Winning will make you famous. Losing means certain death...', 'https://images.gr-assets.com/books/1447303603l/2767052.jpg', 34.0),
