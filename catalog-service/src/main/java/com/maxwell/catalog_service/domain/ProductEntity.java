@@ -19,7 +19,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "products")
-public class ProductEntity implements Serializable {
+class ProductEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
