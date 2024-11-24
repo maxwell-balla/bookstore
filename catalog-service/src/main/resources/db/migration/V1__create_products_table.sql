@@ -1,5 +1,6 @@
 CREATE TABLE products
 (
+    id uuid NOT NULL UNIQUE,
     code TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL,
     description TEXT,
