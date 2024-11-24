@@ -17,18 +17,9 @@ import java.math.BigDecimal;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Product implements Serializable {
 
-    @JsonProperty("code")
     private String code;
-
-    @JsonProperty("name")
     private String name;
-
-    @JsonProperty("description")
     private String description;
-
-    @JsonProperty("imageUrl")
     private String imageUrl;
-
-    @JsonProperty("price")
     private BigDecimal price;
 }
